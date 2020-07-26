@@ -8,7 +8,8 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+ 
 }
 
 @media (max-width: 768px) {
@@ -60,7 +61,21 @@
       }
     }
   }
+  .td-content{
+    padding-top:78px;
+  }
+  #td-sidebar-menu{
+    padding-top:70px !important;
+      .td-sidebar-nav {
+      padding-top: 0!important;
+      text-align: center;
+      background-color: #ddd;
 
+      .td-sidebar-nav__section {
+        padding: 0rem 0;
+      }
+    }
+  }
   .contact-section {
     .contact-info {
       h2 {
@@ -181,15 +196,22 @@
   .td-outer {
     padding-top: 5rem;
   }
-  #td-sidebar-menu .td-sidebar-nav {
-    padding-top: 0!important;
-    text-align: center;
-    background-color: #ddd;
+  .td-content{
+    padding-top:0px;
+  }
+  #td-sidebar-menu{
+    padding-top:0 !important;
+      .td-sidebar-nav {
+      padding-top: 0!important;
+      text-align: center;
+      background-color: #ddd !important;
 
-    .td-sidebar-nav__section {
-      padding: 1rem 0;
+      .td-sidebar-nav__section {
+        padding: 1rem 0;
+      }
     }
   }
+  
   
   .course {
     .contributor-badge {
