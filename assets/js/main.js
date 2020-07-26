@@ -80,3 +80,26 @@ function updateVideo(src) {
     updateVideo(src);
   });
 }(jQuery));
+
+
+function hideOrDisplay() {
+
+    elem = document.getElementsByClassName('d-print-none')[0]
+
+    // Works on the basics of current url
+    if (location.href.split('/').length < 6) {
+        // Performs check on current screen width
+        if (window.innerWidth > 768) {
+            elem.style.display = 'block'
+        } else {
+            elem.style.display = 'none'
+        }    
+    } else {
+        // Removes padding according to the content
+        document.getElementsByClassName('td-content')[0].style.padding = '0px'
+    }
+}
+
+// Trigger's function on resize | onloaded
+window.addEventListener('resize',hideOrDisplay)
+window.addEventListener('DOMContentLoaded',hideOrDisplay)
