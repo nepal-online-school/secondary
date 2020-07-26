@@ -41,3 +41,19 @@
     {% endfor %}
   </nav>
 </div>
+<script>
+  function hideOrDisplay(){
+    elem = document.getElementsByClassName('d-print-none')[0]
+    if(location.href.split('/').length < 6){
+      if(window.innerWidth > 768){
+        elem.style.display='block'
+      }else{
+        elem.style.display='none'
+      }    
+    }else{
+      document.getElementsByClassName('td-content')[0].style.padding='0px'
+    }
+  }
+  window.addEventListener('resize',hideOrDisplay)
+  window.addEventListener('DOMContentLoaded',hideOrDisplay)
+</script>
