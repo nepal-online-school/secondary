@@ -46,4 +46,10 @@ videos:
   - title: Set Exercise 4 Solution
     id: Q-9CUiY55uQ
     contributor: Anil K.C
+  - title: Number System Theory
+    id: vOcuaa5YSqE
+    contributor: Anil K.C
+  - title: Number System Exercise
+    id: UxOam70T0Kk
+    contributor: Anil K.C
 ---
